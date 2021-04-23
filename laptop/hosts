@@ -1,0 +1,2 @@
+[nodes]
+localhost ansible_python_interpreter=auto_silent

@@ -1,0 +1,16 @@
+---
+  - name: "Root tasks"
+    hosts: localhost
+    become: "yes"
+    connection: local
+    roles:
+      - packages
+
+  - name: "User tasks"
+    hosts: localhost
+    connection: local
+    roles:
+      - git
+      - gruntworks
+      - hashicorp
+      - python

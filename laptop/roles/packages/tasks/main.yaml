@@ -1,0 +1,22 @@
+---
+- name: install packages
+  apt:
+    name:
+      - audacity
+      - easytag
+      - gnome-calculator
+      - gparted
+      - htop
+      - inkscape
+      - keepassx
+      - liferea
+      - light-locker
+      - meld
+      - p7zip
+      - safeeyes
+      - vim
+      - vlc
+      - wireshark
+    state: latest
+    update_cache: "yes"
+
