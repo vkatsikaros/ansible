@@ -4,6 +4,7 @@
     name:
       - audacity
       - easytag
+      - curl
       - gnome-calculator
       - gparted
       - htop
