@@ -5,6 +5,7 @@
       - audacity
       - easytag
       - curl
+      - git
       - gnome-calculator
       - gparted
       - htop
