@@ -1,0 +1,2 @@
+- name: Configure xcfe4
+  ansible.builtin.script: xfconf-query.sh
