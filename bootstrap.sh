@@ -11,4 +11,4 @@ source "${VENV_HOME}"/ansible/bin/activate
 pip3 install pip -U
 pip3 install ansible
 deactivate
-ln -s "${VENV_HOME}"/bin/ansible "${USER_HOME}"/.local/bin
+ln -s "${VENV_HOME}"/bin/ansible-playbook"${USER_HOME}"/.local/bin
