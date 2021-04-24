@@ -21,3 +21,19 @@
     state: latest
     update_cache: "yes"
 
+- name: "download and install .deb"
+  apt:
+    deb: '{{item.url}}'
+  with_items:
+  - { name: skype, url: 'https://repo.skype.com/latest/skypeforlinux-64.deb', check: skypeforlinux_installed.rc }
+  - { name: teamviewer, url: 'https://download.teamviewer.com/download/linux/teamviewer_amd64.deb', check: foo }
+  - { name: vscode, url: 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64', check: boo }
+
+- name: purge packages
+  apt:
+    name:
+      - pidgin
+      - thunderbird
+      - transmission-gtk
+    purge: yes
+    state: absent
