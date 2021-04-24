@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -ex
 
+sudo apt-get update
+sudo apt-get install -y python3-distutils python3-pip  python3-venv
+
 USER_HOME='/home/vag'
 VENV_HOME="${USER_HOME}"/.venv
 
