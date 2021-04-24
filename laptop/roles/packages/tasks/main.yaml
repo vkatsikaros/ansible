@@ -21,6 +21,12 @@
     state: latest
     update_cache: "yes"
 
+#- name: check skypeforlinux
+#  command: dpkg-query -W skypeforlinux
+#  register: skypeforlinux_installed
+#  failed_when: skypeforlinux_installed.rc > 1
+#  changed_when: skypeforlinux_installed.rc == 1
+
 - name: "download and install .deb"
   apt:
     deb: '{{item.url}}'
