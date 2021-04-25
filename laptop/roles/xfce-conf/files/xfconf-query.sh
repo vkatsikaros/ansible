@@ -106,3 +106,22 @@ xfconf-query -c xfce4-panel -n -p /panels/panel-1/size              -t int -s 25
 xfconf-query -c xfce4-panel -p /panels -t int -t int -s 0 -s 1
 
 xfce4-panel --restart
+
+# configure thinar
+xfconf-query -c thunar -p /last-compact-view-zoom-level    -n -t string -s 'THUNAR_ZOOM_LEVEL_SMALL'
+xfconf-query -c thunar -p /last-details-view-column-widths -n -t string -s '50,140,50,50,766,50,50,80,220,158'
+xfconf-query -c thunar -p /last-details-view-zoom-level    -n -t string -s 'THUNAR_ZOOM_LEVEL_50_PERCENT'
+xfconf-query -c thunar -p /last-icon-view-zoom-level       -t string -s 'THUNAR_ZOOM_LEVEL_LARGEST'
+xfconf-query -c thunar -p /last-location-bar               -t string -s ThunarLocationEntry
+xfconf-query -c thunar -p /last-separator-position         -t int -s 187
+xfconf-query -c thunar -p /last-show-hidden                -n -t bool -s true
+xfconf-query -c thunar -p /last-side-pane                  -n -t string-s void
+xfconf-query -c thunar -p /last-sort-column                -n -t string-s THUNAR_COLUMN_NAME
+xfconf-query -c thunar -p /last-sort-order                 -n -t string -s GTK_SORT_ASCENDING
+xfconf-query -c thunar -p /last-view                       -t string-s ThunarDetailsView
+xfconf-query -c thunar -p /last-window-height              -t int -s 610
+xfconf-query -c thunar -p /last-window-maximized           -t bool -s false
+xfconf-query -c thunar -p /last-window-width               -t int -s 1145
+xfconf-query -c thunar -p /misc-single-click               -n -t bool -s false
+xfconf-query -c thunar -p /misc-volume-management          -t bool -s true
+xfconf-query -c thunar -p /shortcuts-icon-size             -t string-s THUNAR_ICON_SIZE_SMALLEST
