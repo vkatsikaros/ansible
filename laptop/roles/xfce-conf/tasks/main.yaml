@@ -7,3 +7,10 @@
     dest: ~/.config/xfce4/terminal/terminalrc
     backup: yes
     mode: 0664
+
+- name: Configure safeeyes
+  copy:
+    src: safeeyes.json
+    dest: ~/.config/safeeyes/safeeyes.json
+    backup: yes
+    mode: 0664
