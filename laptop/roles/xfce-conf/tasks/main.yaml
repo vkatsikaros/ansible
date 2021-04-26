@@ -19,7 +19,7 @@
   ansible.builtin.file:
     path: ~/.config/keepassx
     state: directory
-    mode: 0664
+    mode: 0755
 
 - name: Configure keepassx2
   copy:
