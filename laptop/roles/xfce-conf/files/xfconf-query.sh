@@ -125,3 +125,76 @@ xfconf-query -c thunar -p /last-window-width               -t int -s 1145
 xfconf-query -c thunar -p /misc-single-click               -n -t bool -s false
 xfconf-query -c thunar -p /misc-volume-management          -t bool -s true
 xfconf-query -c thunar -p /shortcuts-icon-size             -t string -s THUNAR_ICON_SIZE_SMALLEST
+
+# configure keyboard shortcuts: remove unused keyboard shortcuts
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Alt>F1'                -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Alt>F2'                -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Alt>F2/startup-notify' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Alt>F3'                -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Alt>F3/startup-notify' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>Escape'   -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>t'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Shift>Print'           -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>3'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>4'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>e'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>f'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>F1'              -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>m'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>w'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Explorer'           -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Mail'               -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Messenger'          -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Music'              -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>d'    -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>Down' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>End'  -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>Home' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>End'  -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>Home' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_1' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_2' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_3' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_4' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_5' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_6' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_7' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_8' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt><Control>KP_9' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt>Insert'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_1' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_2' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_3' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_4' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_5' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_6' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_7' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_8' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>KP_9' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F1'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F10'       -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F11'       -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F12'       -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F2'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F3'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F4'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F5'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F6'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F7'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F8'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F9'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>d'           -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>Down'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_1'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_3'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_7'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_9'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>Left'        -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>Right'       -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>Up'          -r
+
+# configure keyboard shortcuts: existing keyboard shortcuts, different settings
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>1'       -t string -s 'gnome-calculator'
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>2'       -t string -s 'exo-open --launch WebBrowser'
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Calculator' -t string -s 'gnome-calculator'
