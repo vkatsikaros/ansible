@@ -1,4 +1,8 @@
 ---
+- name: add safeeyes repo
+  ansible.builtin.apt_repository:
+    repo: ppa:slgobinath/safeeyes
+
 - name: install packages
   apt:
     name:
