@@ -15,6 +15,12 @@
     backup: yes
     mode: 0664
 
+- name: Create keepassx2 directory (if it does not exist)
+  ansible.builtin.file:
+    path: ~/.config/keepassx
+    state: directory
+    mode: 0664
+
 - name: Configure keepassx2
   copy:
     src: keepassx2.ini
