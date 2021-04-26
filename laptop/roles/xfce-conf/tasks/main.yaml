@@ -14,3 +14,10 @@
     dest: ~/.config/safeeyes/safeeyes.json
     backup: yes
     mode: 0664
+
+- name: Configure keepassx2
+  copy:
+    src: keepassx2.ini
+    dest: ~/.config/keepassx/keepassx2.ini
+    backup: yes
+    mode: 0664
