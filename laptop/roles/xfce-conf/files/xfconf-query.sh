@@ -10,7 +10,7 @@ xfconf-query -c keyboard-layout -p /Default/XkbOptions/Group -n -t string -s 'gr
 # Desktop appearance
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-home                   -t bool -s false
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem             -t bool -s false
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/rgba1       -t double -t double -t double -t double -s 0.136667 -s 0.136667 -s 0.136667 -s 1.000000
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/rgba1       -n -t double -t double -t double -t double -s 0.136667 -s 0.136667 -s 0.136667 -s 1.000000
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/image-style -t int -s 1
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/last-image  -t string -s '/home/vag/.photos/howorth-1-960x640@2x.jpeg'
     
@@ -111,17 +111,17 @@ xfce4-panel --restart
 xfconf-query -c thunar -p /last-compact-view-zoom-level    -n -t string -s 'THUNAR_ZOOM_LEVEL_SMALL'
 xfconf-query -c thunar -p /last-details-view-column-widths -n -t string -s '50,140,50,50,766,50,50,80,220,158'
 xfconf-query -c thunar -p /last-details-view-zoom-level    -n -t string -s 'THUNAR_ZOOM_LEVEL_50_PERCENT'
-xfconf-query -c thunar -p /last-icon-view-zoom-level       -t string -s 'THUNAR_ZOOM_LEVEL_LARGEST'
-xfconf-query -c thunar -p /last-location-bar               -t string -s ThunarLocationEntry
-xfconf-query -c thunar -p /last-separator-position         -t int -s 187
+xfconf-query -c thunar -p /last-icon-view-zoom-level       -n -t string -s 'THUNAR_ZOOM_LEVEL_LARGEST'
+xfconf-query -c thunar -p /last-location-bar               -n -t string -s ThunarLocationEntry
+xfconf-query -c thunar -p /last-separator-position         -n -t int -s 187
 xfconf-query -c thunar -p /last-show-hidden                -n -t bool -s true
 xfconf-query -c thunar -p /last-side-pane                  -n -t string -s void
 xfconf-query -c thunar -p /last-sort-column                -n -t string -s THUNAR_COLUMN_NAME
 xfconf-query -c thunar -p /last-sort-order                 -n -t string -s GTK_SORT_ASCENDING
 xfconf-query -c thunar -p /last-view                       -t string -s ThunarDetailsView
-xfconf-query -c thunar -p /last-window-height              -t int -s 610
-xfconf-query -c thunar -p /last-window-maximized           -t bool -s false
-xfconf-query -c thunar -p /last-window-width               -t int -s 1145
+xfconf-query -c thunar -p /last-window-height              -n -t int -s 610
+xfconf-query -c thunar -p /last-window-maximized           -n -t bool -s false
+xfconf-query -c thunar -p /last-window-width               -n -t int -s 1145
 xfconf-query -c thunar -p /misc-single-click               -n -t bool -s false
 xfconf-query -c thunar -p /misc-volume-management          -t bool -s true
 xfconf-query -c thunar -p /shortcuts-icon-size             -t string -s THUNAR_ICON_SIZE_SMALLEST
