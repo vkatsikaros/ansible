@@ -8,6 +8,12 @@
     backup: yes
     mode: 0664
 
+- name: Create safeeyes directory (if it does not exist)
+  ansible.builtin.file:
+    path: ~/.config/safeeyes
+    state: directory
+    mode: 0755
+
 - name: Configure safeeyes
   copy:
     src: safeeyes.json
