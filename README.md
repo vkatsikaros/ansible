@@ -7,5 +7,6 @@
 bash bootstrap.sh
 
 # run ansible 
-ansible -i hosts tasks.yml --ask-become-pass
+cd laptop
+ansible-playbook -i hosts tasks.yml --ask-become-pass
 ```
