@@ -13,7 +13,10 @@ xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem      
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/rgba1       -n -t double -t double -t double -t double -s 0.136667 -s 0.136667 -s 0.136667 -s 1.000000
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/image-style -t int -s 1
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/last-image  -t string -s '/home/vag/.photos/howorth-1-960x640@2x.jpeg'
-    
+
+# Configure new displays when connected
+xfconf-query -c displays -p /Notify -t bool -s true
+
 # workspaces
 xfconf-query -c xfwm4 -p /general/workspace_count -t int -s 4
 xfconf-query -c xfwm4 -p /general/workspace_names -t string -t string -t string -t string -s 'work' -s 'mail' -s 'work mail' -s 'misc'
