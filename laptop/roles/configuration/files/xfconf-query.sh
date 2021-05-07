@@ -7,12 +7,17 @@ xfconf-query -c keyboard-layout -p /Default/XkbLayout        -n -t string -s 'us
 xfconf-query -c keyboard-layout -p /Default/XkbVariant       -n -t string -s ','
 xfconf-query -c keyboard-layout -p /Default/XkbOptions/Group -n -t string -s 'grp:caps_toggle'
     
-# Desktop appearance
+# Desktop appearance: eDP-1 is the laptop screen
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-home                   -t bool -s false
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem             -t bool -s false
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/rgba1       -n -t double -t double -t double -t double -s 0.136667 -s 0.136667 -s 0.136667 -s 1.000000
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/image-style -t int -s 1
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/last-image  -t string -s '/home/vag/.photos/howorth-1-960x640@2x.jpeg'
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/last-image  -t string -s '/home/vag/.desktop-photos/howorth-1-960x640@2x_S.jpeg'
+
+# Desktop appearance: HDMI-1 is the exrenral monitor
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorHDMI-1/workspace0/rgba1       -n -t double -t double -t double -t double -s 0.136667 -s 0.136667 -s 0.136667 -s 1.000000
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorHDMI-1/workspace0/image-style -t int -s 1
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorHDMI-1/workspace0/last-image  -t string -s '/home/vag/.desktop-photos/toor-7-1202x1536.jpg'
 
 # Appearance - Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -t string -s 'Inter 12'
