@@ -149,8 +149,6 @@ xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>Esca
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l'        -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>t'        -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Shift>Print'           -r
-xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>3'               -r
-xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>4'               -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>e'               -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>f'               -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>F1'              -r
@@ -210,4 +208,7 @@ xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>Up'          -
 # configure keyboard shortcuts: existing keyboard shortcuts, different settings
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>1'       -t string -s 'gnome-calculator'
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>2'       -t string -s 'exo-open --launch WebBrowser'
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>3'       -t string -s 'keepassx'
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>4'       -t string -s 'firefox %u -P Adzuna'
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>5'       -n -t string -s 'google-chrome-stable %U'
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Calculator' -t string -s 'gnome-calculator'
