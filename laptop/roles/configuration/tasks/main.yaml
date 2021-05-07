@@ -40,3 +40,25 @@
     dest: ~/.gitconfig
     backup: yes
     mode: 0664
+
+# https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+- name: Configure git prompt
+  copy:
+    src: git-prompt.sh
+    dest: ~/.git-prompt.sh
+    backup: yes
+    mode: 0664
+
+- name: Configure bash prompt
+  copy:
+    src: .bash-prompt.sh
+    dest: ~/.bash-prompt.sh
+    backup: yes
+    mode: 0664
+
+- name: Configure bashrc
+  copy:
+    src: .bashrc
+    dest: ~/.bashrc
+    backup: yes
+    mode: 0664
