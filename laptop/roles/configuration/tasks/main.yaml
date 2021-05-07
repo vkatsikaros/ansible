@@ -8,6 +8,13 @@
     backup: yes
     mode: 0664
 
+- name: Configure panel plugin cpugraph
+  copy:
+    src: cpugraph-40.rc
+    dest: ~/.config/xfce4/panel/cpugraph-40.rc
+    backup: yes
+    mode: 0664
+
 - name: Create safeeyes directory (if it does not exist)
   ansible.builtin.file:
     path: ~/.config/safeeyes

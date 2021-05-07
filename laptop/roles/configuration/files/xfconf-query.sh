@@ -47,6 +47,8 @@ xfconf-query -c xfce4-panel -p /plugins/plugin-31                    -n -t strin
 xfconf-query -c xfce4-panel -p /plugins/plugin-31/expand             -n -t bool -s true
 xfconf-query -c xfce4-panel -p /plugins/plugin-31/style              -n -t int -s 0
 
+xfconf-query -c xfce4-panel -p /plugins/plugin-40                    -n -t string -s cpugraph
+
 xfconf-query -c xfce4-panel -p /plugins/plugin-32                    -n -t string -s systray
 xfconf-query -c xfce4-panel -p /plugins/plugin-32/show-frame         -n -t bool -s false
 xfconf-query -c xfce4-panel -p /plugins/plugin-32/size-max           -n -t int -s 22
@@ -86,8 +88,8 @@ xfconf-query -c xfce4-panel -p /plugins/plugin-39/digital-format     -n -t strin
 
 # Top panel will now use the new plugins
 xfconf-query -c xfce4-panel -p /panels/panel-0/plugin-ids \
--t int -t int -t int -t int -t int -t int -t int -t int -t int -t int \
--s 30  -s 31  -s 32  -s 33  -s 34  -s 35  -s 36  -s 37  -s 38  -s 39
+-t int -t int -t int -t int -t int -t int -t int -t int -t int -t int -t int \
+-s 30  -s 31  -s 40  -s 32  -s 33  -s 34  -s 35  -s 36  -s 37  -s 38  -s 39
 
 # Add new plugins for bottom panel
 xfconf-query -c xfce4-panel -n -p /plugins/plugin-20                  -t string -s tasklist
