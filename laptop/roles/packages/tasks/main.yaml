@@ -12,6 +12,7 @@
       - git
       - gnome-calculator
       - gparted
+      - html-xml-utils
       - htop
       - inkscape
       - keepassx
