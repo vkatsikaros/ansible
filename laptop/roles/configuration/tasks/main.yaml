@@ -33,3 +33,10 @@
     dest: ~/.config/keepassx/keepassx2.ini
     backup: yes
     mode: 0664
+
+- name: Configure git
+  copy:
+    src: .gitconfig
+    dest: ~/.gitconfig
+    backup: yes
+    mode: 0664
