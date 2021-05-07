@@ -26,20 +26,46 @@
     state: latest
     update_cache: "yes"
 
-#- name: check skypeforlinux
-#  command: dpkg-query -W skypeforlinux
-#  register: skypeforlinux_installed
-#  failed_when: skypeforlinux_installed.rc > 1
-#  changed_when: skypeforlinux_installed.rc == 1
+- name: skypeforlinux_installed
+  command: dpkg-query -W skypeforlinux
+  register: skypeforlinux_installed
+  failed_when: skypeforlinux_installed.rc > 1
 
-- name: "download and install .deb"
+- name: skypeforlinux
   apt:
-    deb: '{{item.url}}'
-  with_items:
-  - { name: skype,      url: 'https://repo.skype.com/latest/skypeforlinux-64.deb' }
-  - { name: teamviewer, url: 'https://download.teamviewer.com/download/linux/teamviewer_amd64.deb' }
-  - { name: vscode,     url: 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' }
-  - { name: zoom,       url: 'https://zoom.us/client/latest/zoom_amd64.deb' }
+    deb: 'https://repo.skype.com/latest/skypeforlinux-64.deb'
+  when: skypeforlinux_installed.rc == 1
+
+- name: code_installed
+  command: dpkg-query -W code
+  register: code_installed
+  failed_when: code_installed.rc > 1
+
+- name: code
+  apt:
+    deb: 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+  when: code_installed.rc == 1
+
+- name: zoom_installed
+  command: dpkg-query -W zoom
+  register: zoom_installed
+  failed_when: zoom_installed.rc > 1
+
+- name: zoom
+  apt:
+    deb: 'https://zoom.us/client/latest/zoom_amd64.deb'
+  when: zoom_installed.rc == 1
+
+- name: teamviewer_installed
+  command: dpkg-query -W teamviewer
+  register: teamviewer_installed
+  failed_when: teamviewer_installed.rc > 1
+
+- name: teamviewer
+  apt:
+    deb: 'https://zoom.us/client/latest/zoom_amd64.deb'
+  when: teamviewer_installed.rc == 1
+
 
 - name: purge packages
   apt:
