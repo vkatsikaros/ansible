@@ -14,6 +14,9 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/rgba1
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/image-style -t int -s 1
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP-1/workspace0/last-image  -t string -s '/home/vag/.photos/howorth-1-960x640@2x.jpeg'
 
+# Appearance - Fonts
+xfconf-query -c xsettings -p /Gtk/FontName -t string -s 'Inter 12'
+
 # Configure new displays when connected
 xfconf-query -c displays -p /Notify -t bool -s true
 
