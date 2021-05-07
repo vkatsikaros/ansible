@@ -10,4 +10,5 @@
     hosts: localhost
     connection: local
     roles:
+      - not-packages
       - configuration
