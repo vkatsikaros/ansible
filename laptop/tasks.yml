@@ -10,4 +10,4 @@
     hosts: localhost
     connection: local
     roles:
-      - xfce-conf
+      - configuration
