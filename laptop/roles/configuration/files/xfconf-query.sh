@@ -84,7 +84,7 @@ xfconf-query -c xfce4-panel -p /plugins/plugin-38/expand             -n -t bool 
 xfconf-query -c xfce4-panel -p /plugins/plugin-38/style              -n -t int  -s 0
 
 xfconf-query -c xfce4-panel -p /plugins/plugin-39                    -n -t string -s clock
-xfconf-query -c xfce4-panel -p /plugins/plugin-39/digital-format     -n -t string -s '%d %b, %H:%M'
+xfconf-query -c xfce4-panel -p /plugins/plugin-39/digital-format     -n -t string -s '%a %d %b, %R'
 
 # Top panel will now use the new plugins
 xfconf-query -c xfce4-panel -p /panels/panel-0/plugin-ids \
