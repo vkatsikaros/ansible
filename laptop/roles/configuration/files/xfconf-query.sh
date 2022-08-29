@@ -61,14 +61,15 @@ xfconf-query -c xfce4-panel -p /plugins/plugin-34/blacklist          -n --force-
 xfconf-query -c xfce4-panel -p /plugins/plugin-34/known-indicators   -n --force-array -t string -s 'com.canonical.indicator.messages'
 xfconf-query -c xfce4-panel -p /plugins/plugin-34/square-icons       -n -t bool -s true
 
-xfconf-query -c xfce4-panel -p /plugins/plugin-35                    -n -t string -s statusnotifier
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/icon-size          -n -t int -s 22
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/known-items        -n -t string -t string -s 'blueman' -s 'nm-applet'
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/menu-is-primary    -n -t bool -s true
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/mode-whitelist     -n -t bool -s false
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/single-row         -n -t bool -s false
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/square-icons       -n -t bool -s true
-xfconf-query -c xfce4-panel -p /plugins/plugin-35/symbolic-icons     -n -t bool -s true
+# on 22.04 this seems identical to plugin-32 / systray
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35                    -n -t string -s statusnotifier
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/icon-size          -n -t int -s 22
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/known-items        -n -t string -t string -s 'blueman' -s 'nm-applet'
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/menu-is-primary    -n -t bool -s true
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/mode-whitelist     -n -t bool -s false
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/single-row         -n -t bool -s false
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/square-icons       -n -t bool -s true
+# xfconf-query -c xfce4-panel -p /plugins/plugin-35/symbolic-icons     -n -t bool -s true
 
 xfconf-query -c xfce4-panel -p /plugins/plugin-36                    -n -t string -s power-manager-plugin
 
@@ -88,8 +89,8 @@ xfconf-query -c xfce4-panel -p /plugins/plugin-39/digital-format     -n -t strin
 
 # Top panel will now use the new plugins
 xfconf-query -c xfce4-panel -p /panels/panel-0/plugin-ids \
--t int -t int -t int -t int -t int -t int -t int -t int -t int -t int -t int \
--s 30  -s 31  -s 40  -s 32  -s 33  -s 34  -s 35  -s 36  -s 37  -s 38  -s 39
+-t int -t int -t int -t int -t int -t int -t int -t int -t int -t int \
+-s 30  -s 31  -s 40  -s 32  -s 33  -s 34  -s 36  -s 37  -s 38  -s 39
 
 # Add new plugins for bottom panel
 xfconf-query -c xfce4-panel -n -p /plugins/plugin-20                  -t string -s tasklist
