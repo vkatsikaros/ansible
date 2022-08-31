@@ -215,7 +215,7 @@ xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>5'       -n
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Calculator' -t string -s 'gnome-calculator'
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>w'       -n -t string -s 'xfce4-appfinder'
 
-
+# desktop notification settings
 xfconf-query -c xfce4-notifyd -p /do-not-disturb         -n -t bool -s false
 xfconf-query -c xfce4-notifyd -p /applications/muted_applications \
 -t string          -t string   \
