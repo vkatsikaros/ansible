@@ -213,6 +213,7 @@ xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>3'       -t
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>4'       -t string -s 'firefox %u -P Adzuna'
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>5'       -n -t string -s 'google-chrome-stable %U'
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/XF86Calculator' -t string -s 'gnome-calculator'
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Super>w'       -n -t string -s 'xfce4-appfinder'
 
 
 xfconf-query -c xfce4-notifyd -p /do-not-disturb         -n -t bool -s false
